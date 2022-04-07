@@ -38,7 +38,6 @@ const resetDisplay = () => {
 
 const storeOperator = operator => {
   currentOperator = operator
-  console.log(currentOperator)
 }
 
 const storeDisplayNumber = () => {
