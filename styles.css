@@ -1,3 +1,7 @@
+body{
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 .container{
   display: flex;
   height:100vh;
@@ -5,44 +9,70 @@
   align-items: center;
 }
 
+p{
+  margin: 0;
+}
+
 .calc-container{
   width: 350px;
   height: 400px;
   box-sizing: border-box;
-  background-color: grey;
+  background-color: #1F2937;
   display:flex;
   flex-direction: column;
   padding: 15px;
 }
 
+.calculation-display{
+  font-size: 15px;
+  color: grey;
+}
 .display-container{
- background-color: wheat;
+ background-color: white;
  height: 80px;
  box-sizing: border-box;
  text-align: right;
  display: flex;
- justify-content: flex-end;
- align-items: center;
+ flex-direction: column;
+ justify-content: center;
+ align-items: flex-end;
+ gap: 10px;
  padding: 0px 15px;
  font-size: 24px;
 }
 
+.
+
+button{
+  background-color: white;
+  border: 1px solid #1F2937;
+}
+
+button:focus{
+  outline: none;
+}
+
+button:hover{
+  background-color: rgb(92, 92, 92);
+  color: white;
+}
+
 .btn-container{
   margin-top: 15px;
-  background-color: darkblue;
+  background-color: #3882F6;
   height: 270px;
   display: flex;
   flex-wrap: wrap;
 }
 .number-btn{
   box-sizing: border-box;
+  padding: 10px 0px;
   width: 33.3%;
   font-size: 24px;
 }
 .number-btns{
   box-sizing: border-box;
   display: flex;
-  background-color: red;
   width: 70%;
   flex-wrap: wrap;
 }
@@ -50,7 +80,7 @@
 .operator-btn{
   box-sizing: border-box;
   width: 100%;
-  font-size: 23px;
+  font-size: 29px;
 }
 
 .operator-btns{
@@ -61,6 +91,7 @@
 
 .control-btns{
   width: 100%;
+  display: flex;
 }
 
 .wide-btn{
